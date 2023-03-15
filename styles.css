@@ -1,0 +1,139 @@
+main {
+	background-color: #242529;
+	padding-bottom: 10%;
+}
+
+.nav-link {
+	display: block;
+	font-weight: bold;
+	font-size: 1.5rem;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+
+.nav-list {
+	padding: 0%;
+	display: grid;
+	list-style-type: none;
+}
+
+.nav-list .list-item {
+	border-radius: 5%;
+	border-color: rgb(33, 44, 59);
+	border-width: thick;
+	border-style: solid;
+	grid-row: 1;
+	line-height: 100px;
+	float: left;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(128, 146, 150);
+}
+
+.nav-list .list-item:hover {
+	background-color: rgb(214, 178, 99);
+}
+
+.nav-list .list-item:active {
+	background-color: rgb(173, 119, 2);
+}
+
+.nav-list .list-item a {
+	color: inherit;
+}
+
+.nav-list .list-item:hover a {
+	color: inherit;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+section {
+	display: block;
+	background-color: rgba(164, 169, 173, 0.95);
+	border-width: thin;
+	border-color: rgb(33, 44, 59);
+	border-style: solid;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4%;
+}
+
+.profileImage {
+	float: left;
+	border-radius: 60%;
+	margin-left: 20%;
+	margin-right: 3%;
+}
+
+.description {
+	background-color: rgba(164, 169, 173, 0.95);
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 5%;
+	padding: 5%;
+}
+
+.description::first-line {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.workList {
+	margin-left: 20%;
+}
+
+#reportLink {
+	display: inline-block;
+}
+
+body {
+	margin: 0;
+	padding: 0%;
+}
+
+#imageLabel {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.timeFloImageContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+
+.timeFloImage {
+	height: 45%;
+	max-height: 400px;
+	width: 45%;
+	max-width: 400px;
+	border-radius: 5%;
+}
+
+@media (min-width: 768px) {
+	main {
+		background-image: url("./images/background.png");
+		background-color: #7aacdf;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#form {
+		background-color: #242529;
+		color: white;
+		margin-top: 10%;
+		border-radius: 15%;
+	}
+}

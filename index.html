@@ -1,28 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>01 - Hello</title>
-		<!-- <link rel="stylesheet" href="../styles.css" /> -->
+		<title>Personal Website</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
 		<main>
-			<img
-				src="./images/intro_picture.png"
-				alt="Picture of Matthew Istvan's face"
-				class="profileImage"
-				width="200"
-				height="200"
-			/>
-			<p class="description">
-				Hello, my name is Matthew Istvan, but I usually go by just
-				'Matt'. I'm a full-time Computer Science student and part-time
-				retail worker. I'm currently studying Web and Java development,
-				in the past I have also studied AI and machine learning. In my
-				free time I enjoy playing games and listening to music.
-			</p>
+			<nav>
+				<ul class="nav-list">
+					<li class="list-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="list-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="list-item">
+						<a class="nav-link" href="#form">Form</a>
+					</li>
+				</ul>
+			</nav>
+			<section id="about">
+				<h2 class="text-uppercase text-center fw-bold">About</h2>
+				<img
+					src="./images/intro_picture.png"
+					alt="Picture of Matthew Istvan's face"
+					class="profileImage"
+					width="200"
+					height="200"
+				/>
+				<p class="description">
+					I'm a senior undergraduate student at Portland State
+					University. I have experience with Java and it's frameworks
+					and APIs via an Advanced Programming course, experience with
+					data-science and machine-learning via AI/Machine-learning
+					courses, and I have picked up a bit of security experience
+					via a cyber-security course. In my machine-learning course I
+					worked with others on a small computer vision project, and
+					also worked to develop a simple AI to play the classic game
+					'Snake'. I've enjoyed the Java development and
+					machine-learning applications the most, and recently I've
+					picked up web-development as well and am excited to
+					integrate them all in a project soon. I'm still early in my
+					career and looking to create more projects and gain more
+					knowledge about different programming languages, their APIs,
+					frameworks, etc. When I graduate I'd love to work developing
+					web-applications on the front-end or back-end(I enjoy both),
+					or in machine-learning since it's an incredibly quickly
+					growing field that holds a lot of promise.
+				</p>
+				<h2 class="text-uppercase text-center fw-bold">
+					Previous Courses
+				</h2>
+				<ul class="workList">
+					<li>CS-445 Machine Learning</li>
+					<li>CS-441 Artificial Intelligence</li>
+					<li>CS-491 Intro to Security</li>
+					<li>CS-410P Advanced Java Programming(IP)</li>
+				</ul>
+			</section>
+			<section id="projects">
+				<h2 class="text-center fw-bold text-uppercase">Projects</h2>
+				<h3 class="text-center">Snake Game AI Experiment</h3>
+				<div class="text-center fw-bold">
+					<a href="https://github.com/m-is/Snake-Training"
+						>GitHub Repo</a
+					>
+				</div>
+				<p class="mx-4">
+					This experiment implemented a simple version of the popular
+					arcade game 'Snake', and tested various AI models on the
+					game. The whole program was developed from scratch in Java.
+					The models trained and tested on the Snake game were: a
+					locally sensing agent, a gloabally sensing agent, a
+					reinforcement learning agent, and a multilayer perceptron
+					learning agent. You can view a report of the findings
+					<a
+						id="reportLink"
+						href="https://docs.google.com/document/d/1rsdplgvvntfQWEl90ZVYhQ2E8zzOXTot_fjDOtYIS7o/edit?usp=sharing"
+					>
+						here.
+					</a>
+				</p>
+				<h3 class="text-center">TimeFlo (Pomodero Timer App)</h3>
+				<div class="text-center fw-bold">
+					<a href="https://github.com/m-is/TimeFlo-MacApp"
+						>GitHub Repo</a
+					>
+				</div>
+				<p class="mx-4">
+					A Pomodero style timer to assist with productivity and
+					focus. Application has a GUI window and can run in the
+					background while you work on tasks. Comes with customizable
+					sounds and variable time settings for focus and break time.
+					Developed with Python3 for Apple Macintosh computers.
+				</p>
+				<h4 id="imageLabel" class="text-center">
+					TimeFlo Demonstration Images
+				</h4>
+				<div class="timeFloImageContainer">
+					<img
+						src="./images/timeflo1.PNG"
+						alt="A demostration image of the timeflo application"
+						class="timeFloImage"
+					/>
+					<img
+						src="./images/timeflo2.png"
+						alt="A demostration image of the timeflo application"
+						class="timeFloImage"
+					/>
+				</div>
+			</section>
+			<section id="form">
+				<h2 class="text-center pt-3 fw-bold text-uppercase">
+					Contact Form
+				</h2>
+				<form class="form m-5 rounded" action="">
+					<div class="form-group row pb-2 mx-1">
+						<label for="Username" class="col-form-label col-sm-3"
+							>Username:</label
+						>
+						<div class="col-sm-9">
+							<input
+								class="form-control"
+								type="text"
+								name="Username"
+								id="Username"
+								placeholder="username"
+							/>
+						</div>
+					</div>
+					<div class="form-group row pb-2 mx-1">
+						<label for="Email" class="col-form-label col-sm-3"
+							>Email:</label
+						>
+						<div class="col-sm-9">
+							<input
+								class="form-control"
+								type="email"
+								name="Email"
+								id="Email"
+								placeholder="email address"
+							/>
+						</div>
+					</div>
+					<div class="form-group row pb-2 mx-1">
+						<label for="Message" class="col-form-label col-sm-3"
+							>Message:</label
+						>
+						<div class="col-sm-9">
+							<textarea
+								class="form-control"
+								type="text"
+								name="Message"
+								id="Message"
+								rows="4"
+								placeholder="Input your message here..."
+							></textarea>
+						</div>
+					</div>
+					<div class="form-group row pb-2 mx-1" id="date">
+						<label for="Date" class="col-form-label col-sm-3"
+							>Date:</label
+						>
+						<div class="col-sm">
+							<input
+								type="date"
+								class="form-control"
+								name="Date"
+								id="Date"
+							/>
+						</div>
+					</div>
+					<div class="d-flex justify-content-center pb-2">
+						<button
+							type="submit"
+							class="btn btn-primary mx-1 my-3 col-3"
+						>
+							Submit
+						</button>
+						<button
+							type="reset"
+							class="btn btn-seconday mx-1 my-3 col-3 bg-secondary text-white"
+						>
+							Reset
+						</button>
+					</div>
+				</form>
+			</section>
 		</main>
 	</body>
 </html>
