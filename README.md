@@ -11,3 +11,5 @@ References used in building this website:
 2.https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
 
 3.https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend
+
+4.https://www.w3schools.com/howto/howto_css_center-list.asp
