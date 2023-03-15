@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Personal Website</title>
+		<script defer src="script.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -26,8 +27,8 @@
 					</li>
 				</ul>
 			</nav>
-			<button id="backgroundToggle" type="button">
-				Turn Off Background
+			<button id="backgroundToggle" value="OFF" type="button">
+				Toggle Background
 			</button>
 			<section id="about">
 				<h2 class="text-uppercase text-center fw-bold">About</h2>
@@ -39,9 +40,10 @@
 					height="200"
 				/>
 				<p class="description">
-					I'm a senior undergraduate student at Portland State
-					University. I have experience with Java and it's frameworks
-					and APIs via an Advanced Programming course, experience with
+					Hello! My name is Matt Istvan, and I'm a senior
+					undergraduate student at Portland State University. I have
+					experience with Java and it's frameworks and APIs via an
+					Advanced Java Programming course, experience with
 					data-science and machine-learning via AI/Machine-learning
 					courses, and I have picked up a bit of security experience
 					via a cyber-security course. In my machine-learning course I
@@ -110,32 +112,32 @@
 				<div class="timeFloImageContainer">
 					<img
 						src="./images/timeflo1.PNG"
-						alt="A demostration image of the timeflo application"
+						alt="The first demostration image of the timeflo application, shows the alarm sound selection"
 						class="timeFloImage"
 					/>
 					<img
 						src="./images/timeflo2.png"
-						alt="A demostration image of the timeflo application"
+						alt="The second demostration image of the timeflo application, shows the light theme"
 						class="timeFloImage"
 					/>
 				</div>
 			</section>
 			<section id="form">
 				<h2 class="text-center pt-3 fw-bold text-uppercase">
-					Contact Form
+					Contact Me
 				</h2>
 				<form class="form m-5 rounded" action="">
 					<div class="form-group row pb-2 mx-1">
-						<label for="Username" class="col-form-label col-sm-3"
-							>Username:</label
+						<label for="Name" class="col-form-label col-sm-3"
+							>Name:</label
 						>
 						<div class="col-sm-9">
 							<input
 								class="form-control"
 								type="text"
-								name="Username"
-								id="Username"
-								placeholder="username"
+								name="Name"
+								id="Name"
+								placeholder="Your name"
 							/>
 						</div>
 					</div>
@@ -149,7 +151,7 @@
 								type="email"
 								name="Email"
 								id="Email"
-								placeholder="email address"
+								placeholder="Email address"
 							/>
 						</div>
 					</div>
