@@ -1,3 +1,12 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
 main {
 	background-color: #242529;
 	padding-bottom: 10%;
@@ -51,7 +60,7 @@ main {
 	background-color: #809296;
 	color: inherit;
 	font-weight: bold;
-	margin-left: 43%;
+	margin-left: 41%;
 	margin-right: 45%;
 	line-height: 300%;
 	border-style: solid;
