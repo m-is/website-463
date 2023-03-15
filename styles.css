@@ -28,7 +28,7 @@ main {
 }
 
 .nav-list .list-item {
-	border-radius: 5%;
+	border-radius: 0%;
 	border-color: rgb(33, 44, 59);
 	border-width: thick;
 	border-style: solid;
@@ -65,10 +65,18 @@ main {
 	line-height: 300%;
 	border-style: solid;
 	border-width: thick;
-	border-radius: 10%;
+	border-radius: 0%;
 	border-color: #242529;
 	width: 15%;
 	min-width: fit-content;
+}
+
+#backgroundToggle:hover {
+	background-color: rgb(214, 178, 99);
+}
+
+#backgroundToggle:active {
+	background-color: rgb(173, 119, 2);
 }
 
 h2 {
@@ -91,6 +99,7 @@ section {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 4%;
+	text-align: center;
 }
 
 .profileImage {
@@ -107,6 +116,8 @@ section {
 	margin-right: 10%;
 	border-radius: 5%;
 	padding: 5%;
+	padding-top: 2%;
+	padding-bottom: 3%;
 }
 
 .description::first-line {
@@ -115,7 +126,8 @@ section {
 }
 
 .workList {
-	padding-left: 20%;
+	text-align: left;
+	display: inline-block;
 }
 
 #reportLink {
