@@ -1,4 +1,4 @@
-let button = document.querySelector("#backgroundToggle");
+let button = document.querySelector("#background-toggle");
 let form = document.querySelector("#form");
 let fullName = document.querySelector("#Name");
 let email = document.querySelector("#Email");
@@ -19,7 +19,7 @@ function toggleBackground(event) {
 
 	if (button.value == "OFF") {
 		button.value = "ON";
-		background.style.backgroundImage = "url(./images/background.png)";
+		background.style.backgroundImage = "url(./images/background.jpg)";
 		background.style.backgroundColor = "#7aacdf";
 		form.style.color = "white";
 		form.style.backgroundColor = "#242529";

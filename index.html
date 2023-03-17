@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Personal Website</title>
+		<title>Matt Istvan's Website</title>
 		<script defer src="script.js"></script>
 		<link
 			rel="stylesheet"
@@ -27,15 +27,17 @@
 					</li>
 				</ul>
 			</nav>
-			<button id="backgroundToggle" value="ON" type="button">
-				Toggle Background
-			</button>
+			<div id="button-container">
+				<button id="background-toggle" value="ON" type="button">
+					Toggle Background
+				</button>
+			</div>
 			<section id="about">
 				<h2 class="text-uppercase text-center fw-bold">About</h2>
 				<img
 					src="./images/intro_picture.png"
 					alt="Picture of Matthew Istvan's face"
-					class="profileImage"
+					class="profile-image"
 					width="200"
 					height="200"
 				/>
@@ -63,7 +65,7 @@
 				<h2 class="text-uppercase text-center fw-bold">
 					Previous Courses
 				</h2>
-				<ul class="workList">
+				<ul class="work-list">
 					<li>CS-445 Machine Learning</li>
 					<li>CS-441 Artificial Intelligence</li>
 					<li>CS-491 Intro to Security</li>
@@ -87,7 +89,7 @@
 					reinforcement learning agent, and a multilayer perceptron
 					learning agent. You can view a report of the findings
 					<a
-						id="reportLink"
+						id="report-link"
 						href="https://docs.google.com/document/d/1rsdplgvvntfQWEl90ZVYhQ2E8zzOXTot_fjDOtYIS7o/edit?usp=sharing"
 					>
 						here.
@@ -106,19 +108,23 @@
 					sounds and variable time settings for focus and break time.
 					Developed with Python3 for Apple Macintosh computers.
 				</p>
-				<h4 id="imageLabel" class="text-center">
+				<h4 id="image-label" class="text-center">
 					TimeFlo Demonstration Images
 				</h4>
-				<div class="timeFloImageContainer">
+				<div class="timeflo-image-container">
 					<img
 						src="./images/timeflo1.PNG"
 						alt="The first demostration image of the timeflo application, shows the alarm sound selection"
-						class="timeFloImage"
+						class="timeflo-image"
+						width="200"
+						height="200"
 					/>
 					<img
 						src="./images/timeflo2.png"
 						alt="The second demostration image of the timeflo application, shows the light theme"
-						class="timeFloImage"
+						class="timeflo-image"
+						width="200"
+						height="200"
 					/>
 				</div>
 			</section>

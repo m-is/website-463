@@ -33,19 +33,19 @@ main {
 	border-width: thick;
 	border-style: solid;
 	grid-row: 1;
-	line-height: 100px;
+	line-height: 50px;
 	float: left;
 	height: 100%;
 	text-align: center;
-	background-color: #809296;
+	background-color: rgb(128, 146, 150, 0.9);
 }
 
 .nav-list .list-item:hover {
-	background-color: rgb(214, 178, 99);
+	background-color: rgb(214, 178, 99, 0.9);
 }
 
 .nav-list .list-item:active {
-	background-color: rgb(173, 119, 2);
+	background-color: rgb(173, 119, 2, 0.9);
 }
 
 .nav-list .list-item a {
@@ -56,12 +56,16 @@ main {
 	color: inherit;
 }
 
-#backgroundToggle {
-	background-color: #809296;
+#button-container {
+	display: flex;
+	justify-content: center;
+}
+
+#background-toggle {
+	display: block;
+	background-color: rgb(128, 146, 150, 0.9);
 	color: inherit;
 	font-weight: bold;
-	margin-left: 41%;
-	margin-right: 45%;
 	line-height: 300%;
 	border-style: solid;
 	border-width: thick;
@@ -71,12 +75,12 @@ main {
 	min-width: fit-content;
 }
 
-#backgroundToggle:hover {
-	background-color: rgb(214, 178, 99);
+#background-toggle:hover {
+	background-color: rgb(214, 178, 99, 0.9);
 }
 
-#backgroundToggle:active {
-	background-color: rgb(173, 119, 2);
+#background-toggle:active {
+	background-color: rgb(173, 119, 2, 0.9);
 }
 
 h2 {
@@ -96,17 +100,19 @@ section {
 	font-weight: 600;
 	font-size: 1.2rem;
 	padding-top: 1%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 4%;
 	text-align: center;
 }
 
-.profileImage {
-	float: left;
+section#about {
+	padding-bottom: 1%;
+}
+
+.profile-image {
+	float: center;
 	border-radius: 60%;
-	margin-left: 20%;
-	margin-right: 3%;
 }
 
 .description {
@@ -125,12 +131,12 @@ section {
 	font-weight: 700;
 }
 
-.workList {
+.work-list {
 	text-align: left;
 	display: inline-block;
 }
 
-#reportLink {
+#report-link {
 	display: inline-block;
 }
 
@@ -139,20 +145,20 @@ body {
 	padding: 0%;
 }
 
-#imageLabel {
+#image-label {
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
-.timeFloImageContainer {
+.timeflo-image-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-bottom: 5%;
 }
 
-.timeFloImage {
+.timeflo-image {
 	height: 45%;
 	max-height: 400px;
 	width: 45%;
@@ -162,7 +168,7 @@ body {
 
 @media (min-width: 768px) {
 	main {
-		background-image: url("./images/background.png");
+		background-image: url("./images/background.jpg");
 		background-color: #7aacdf;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -172,5 +178,14 @@ body {
 		color: white;
 		margin-top: 10%;
 		border-radius: 15%;
+	}
+	section {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.profile-image {
+		float: left;
+		margin-left: 20%;
+		margin-right: 3%;
 	}
 }
