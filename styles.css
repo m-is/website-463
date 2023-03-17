@@ -12,6 +12,11 @@ main {
 	padding-bottom: 10%;
 }
 
+body {
+	margin: 0;
+	padding: 0%;
+}
+
 .nav-list {
 	padding: 0%;
 	display: grid;
@@ -140,9 +145,11 @@ section#about {
 	display: inline-block;
 }
 
-body {
-	margin: 0;
-	padding: 0%;
+.graph-image {
+	border-radius: 5%;
+	height: 75%;
+	width: 43.5%;
+	margin-bottom: 2%;
 }
 
 #image-label {
@@ -168,8 +175,10 @@ body {
 
 @media (min-width: 768px) {
 	#form {
-		margin-top: 10%;
 		border-radius: 10%;
+		width: 60%;
+		margin: auto;
+		margin-top: 10%;
 	}
 	section {
 		margin-left: 10%;
