@@ -12,6 +12,13 @@ main {
 	padding-bottom: 10%;
 }
 
+.nav-list {
+	padding: 0%;
+	display: grid;
+	list-style-type: none;
+	padding-top: 2%;
+}
+
 .nav-link {
 	display: block;
 	font-weight: bold;
@@ -19,12 +26,6 @@ main {
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
-}
-
-.nav-list {
-	padding: 0%;
-	display: grid;
-	list-style-type: none;
 }
 
 .nav-list .list-item {
@@ -168,10 +169,8 @@ body {
 
 @media (min-width: 768px) {
 	#form {
-		background-color: #242529;
-		color: white;
 		margin-top: 10%;
-		border-radius: 15%;
+		border-radius: 10%;
 	}
 	section {
 		margin-left: 10%;
