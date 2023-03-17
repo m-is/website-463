@@ -167,12 +167,6 @@ body {
 }
 
 @media (min-width: 768px) {
-	main {
-		background-image: url("./images/background.jpg");
-		background-color: #7aacdf;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 	#form {
 		background-color: #242529;
 		color: white;
