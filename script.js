@@ -6,7 +6,7 @@ let message = document.querySelector("#Message");
 let date = document.querySelector("#Date");
 
 function toggleBackground(event) {
-	background = document.querySelector("main");
+	let background = document.querySelector("main");
 
 	if (button.value == "ON") {
 		button.value = "OFF";
@@ -40,7 +40,7 @@ function submitForm(event) {
 
 		var info = false;
 
-		for (item in obj) {
+		for (var item in obj) {
 			if (obj[item]) info = true;
 			else obj[item] = "No submission";
 		}
