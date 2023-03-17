@@ -1,5 +1,5 @@
 let button = document.querySelector("#background-toggle");
-let form = document.querySelector("#form");
+let form = document.querySelector("#contact-me");
 let fullName = document.querySelector("#Name");
 let email = document.querySelector("#Email");
 let message = document.querySelector("#Message");

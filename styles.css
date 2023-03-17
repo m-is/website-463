@@ -150,6 +150,8 @@ section#about {
 	height: 75%;
 	width: 43.5%;
 	margin-bottom: 2%;
+	max-width: max-content;
+	max-height: max-content;
 }
 
 #image-label {
@@ -173,14 +175,24 @@ section#about {
 	border-radius: 5%;
 }
 
+#contact-me {
+	border-color: rgba(164, 169, 173);
+	border-width: medium;
+	border-style: double;
+}
+
 .btn {
 	min-width: fit-content;
 }
 
+.btn-primary {
+	background-color: rgb(51, 120, 136);
+}
+
 @media (min-width: 768px) {
-	#form {
+	#contact-me {
 		border-radius: 10%;
-		width: 60%;
+		width: 50%;
 		margin: auto;
 		margin-top: 10%;
 	}
